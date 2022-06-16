@@ -1,0 +1,30 @@
+.space {
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+#desc-container{
+    overflow: auto;
+}
+
+#desc{
+    font-size: 20px;
+    color: gold
+}
+
+.space-desc{
+    width:50%;
+    display: flex;
+    align-items: center;
+    background-color: grey;
+}
+
+#photo{
+    width:100%;
+}
+
+.space-pic{
+    width:50%;
+}
+

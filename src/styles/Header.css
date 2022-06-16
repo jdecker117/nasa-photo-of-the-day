@@ -1,0 +1,39 @@
+.header{
+    height: 12vh;
+    background-color: black;
+    color: white
+
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border: 1px solid red;
+    overflow-x: hidden;
+
+}
+
+#nasa-logo-container{
+ overflow: hidden;
+ display: flex;
+ justify-content: flex-start;
+}
+
+#nasa-logo{
+    width: 100%;
+    height: auto;
+}
+
+#title{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#date{
+    display: flex;
+    flex-direction: column;;
+    justify-content: center;
+    margin-right: 10px;
+}
