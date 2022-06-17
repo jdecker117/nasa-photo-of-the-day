@@ -1,6 +1,8 @@
 import {BASE_URL, API_KEY} from './constants';
 import axios from 'axios';
 import React, {useState, useEffect} from 'react';
+// import theme from './theme'
+// import styled, { keyframes } from 'styled-components'
 
 export default function Description(props){
     const {apod} = props;
@@ -15,11 +17,15 @@ export default function Description(props){
         })
       }, [])
 
+    //   const StyledImages = styled.div`
+    // background-color: ${theme.primaryColor}
+    // color: ${theme.tertiaryColor}`
+
     return(
-        <div id='desc-container'>
-            <div id='desc'>
+        // <StyledImages>
+            <p id='desc'>
                 {description}
-            </div>
-        </div>
+            </p>
+        // </StyledImages>
     )
 }

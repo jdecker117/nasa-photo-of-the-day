@@ -1,6 +1,8 @@
 import {BASE_URL, API_KEY} from './constants';
 import axios from 'axios';
 import React, {useState, useEffect} from 'react';
+// import theme from './theme'
+// import styled, { keyframes } from 'styled-components'
 
 
 export default function Image(props){
@@ -14,15 +16,18 @@ export default function Image(props){
             console.log("Messed Up")
         })
       }, [])
+      
+    //   const StyledImages = styled.div`
+    // background-color: ${theme.primaryColor}
+    // color: ${theme.tertiaryColor}`
 
     return (
-        <div id="image-container">
+        // <StyledImages>
             <img
             alt= 'photo-of-the-day'
             id='photo'
             src={image}
             />
-            
-        </div>
+        // </StyledImages>
     )
 }

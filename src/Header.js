@@ -2,6 +2,8 @@ import React, {useState, useEffect} from 'react';
 import {BASE_URL, API_KEY} from './constants';
 import axios from 'axios';
 import './styles/Header.css'
+import styled, { keyframes } from 'styled-components'
+import theme from './theme'
 
 export default function Header(props) {
     const {apod} = props;
@@ -26,7 +28,13 @@ export default function Header(props) {
         })
       }, [])
 
+
+      const StyledHeader = styled.div`
+        background-color: ${theme.primaryColor};
+        color: ${theme.secondaryColor};
+      `
     return (
+      <StyledHeader>
         <div className='header container'>
             <div id='nasa-logo-container'>
                 <img
@@ -38,5 +46,6 @@ export default function Header(props) {
             <h1 id='title'>{title}</h1>
             <div id='date'>{date}</div>
         </div>
+        </StyledHeader>
     )
 }
